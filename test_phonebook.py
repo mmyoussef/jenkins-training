@@ -10,10 +10,10 @@ def phonebook():
 def test_phone_lookup(phonebook):
     phonebook.add('bob','12345')
     number = phonebook.lookup('bob')
-    assert '12345' == number
+    assert '1235' == number
 
 
 def test_missing_name(phonebook):
     phonebook.add("name","123456")
     with pytest.raises(KeyError):
-        phonebook.lookup("hello")
+        phonebook.lookup("name")
