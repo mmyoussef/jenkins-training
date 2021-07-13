@@ -12,7 +12,7 @@ def test_phone_lookup(phonebook):
     number = phonebook.lookup('bob')
     assert '1235' == number
 
-@pytest.skip
+@pytest.mark.skip
 def test_missing_name(phonebook):
     phonebook.add("name","123456")
     with pytest.raises(KeyError):
