@@ -13,7 +13,7 @@ def test_phone_lookup(phonebook):
     assert '1345' == number
 
 
-def test_missing_name():
+def test_missing_name(phonebook):
     phonebook.add("name","123456")
     with pytest.raises(KeyError):
         phonebook.lookup("name")
