@@ -10,7 +10,7 @@ def phonebook():
 def test_phone_lookup(phonebook):
     phonebook.add('bob','12345')
     number = phonebook.lookup('bob')
-    assert '12345' == number
+    assert '345' == number
 
 
 def test_missing_name(phonebook):
